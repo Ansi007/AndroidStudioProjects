@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">21042022</string>
+    <string name="decrease">Decrease</string>
+    <string name="reset">Reset</string>
+    <string name="increase">Increase</string>
+    <string name="_0">0</string>
+</resources>
