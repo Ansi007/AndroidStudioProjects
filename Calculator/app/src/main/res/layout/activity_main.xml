@@ -20,7 +20,6 @@
             android:layout_width="406dp"
             android:layout_height="65dp"
             android:background="#A3A1A1"
-            android:text="@string/_0"
             android:textAlignment="viewEnd"
             android:textSize="34sp" />
 
