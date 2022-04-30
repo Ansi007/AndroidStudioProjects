@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnClear, btnEqual, btnZero, btnOne, btnTwo,btnThree,btnFour,btnFive,btnSix,btnSeven,btnEight,btnNine;
     Button btnMul,btnMod,btnDiv,btnAdd,btnSub;
     TextView resultText;
+    int val1 = 0, val2 = 0;
+    boolean Add,Sub,Div,Mul,Mod;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,8 +37,106 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnAdd = findViewById(R.id.btnAdd);
         btnSub = findViewById(R.id.btnSub);
         resultText = findViewById(R.id.resultTextView);
-        btnClear.setOnClickListener(this);
-        btnEqual.setOnClickListener(this);
+
+        btnClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resultText.setText("");
+            }
+        });
+        btnEqual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(resultText.getText().length() > 0){
+                    if (Add || Sub || Mul || Div || Mod) {
+                        val2 = Integer.parseInt(resultText.getText() + "");
+                    }
+
+                    if (Add) {
+                        resultText.setText(val1 + val2 + "");
+                        Add = false;
+                    }
+
+                    if (Sub) {
+
+                        resultText.setText(val1 - val2 + "");
+                        Sub = false;
+                    }
+
+                    if (Mul) {
+                        resultText.setText(val1 * val2 + "");
+                        Mul = false;
+                    }
+
+                    if (Div) {
+                        resultText.setText(val1 / val2 + "");
+                        Div = false;
+                    }
+                    if (Mod) {
+                        resultText.setText(val1 % val2 + "");
+                        Mod = false;
+                    }
+
+
+                }
+            }
+        });
+
+        btnMod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(resultText.getText().length() > 0){
+                    val1 = Integer.parseInt(resultText.getText() + "");
+                    Mod = true;
+                    resultText.setText("");
+                }
+            }
+        });
+
+        btnMul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(resultText.getText().length() > 0){
+                    val1 = Integer.parseInt(resultText.getText() + "");
+                    Mul = true;
+                    resultText.setText("");
+                }
+            }
+        });
+
+        btnDiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(resultText.getText().length() > 0){
+                    val1 = Integer.parseInt(resultText.getText() + "");
+                    Div = true;
+                    resultText.setText("");
+                }
+            }
+        });
+
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(resultText.getText().length() > 0){
+                    val1 = Integer.parseInt(resultText.getText() + "");
+                    Add = true;
+                    resultText.setText("");
+                }
+            }
+        });
+
+        btnSub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(resultText.getText().length() > 0){
+                    val1 = Integer.parseInt(resultText.getText() + "");
+                    Sub = true;
+                    resultText.setText("");
+                }
+            }
+        });
+
         btnZero.setOnClickListener(this);
         btnOne.setOnClickListener(this);
         btnTwo.setOnClickListener(this);
@@ -46,11 +147,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnSeven.setOnClickListener(this);
         btnEight.setOnClickListener(this);
         btnNine.setOnClickListener(this);
-        btnMod.setOnClickListener(this);
-        btnMul.setOnClickListener(this);
-        btnDiv.setOnClickListener(this);
-        btnAdd.setOnClickListener(this);
-        btnSub.setOnClickListener(this);
     }
 
     @Override
