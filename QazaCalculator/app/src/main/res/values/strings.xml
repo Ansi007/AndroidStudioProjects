@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QazaCalculator</string>
+    <string name="qaza_calculator">Qaza Calculator</string>
+    <string name="magrib">Magrib</string>
+    <string name="isha">Isha</string>
+    <string name="witr">Witr</string>
+    <string name="fajar">Fajar</string>
+    <string name="asar">Asar</string>
+    <string name="zohar">Zohar</string>
+</resources>
