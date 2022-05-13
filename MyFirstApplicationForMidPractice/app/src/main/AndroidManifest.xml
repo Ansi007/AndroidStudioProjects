@@ -10,13 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApplicationForMidPractice">
         <activity
+            android:name=".SecondActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN">
+
+                </action>
+
+                <category android:name="android.intent.category.LAUNCHER">
+
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
