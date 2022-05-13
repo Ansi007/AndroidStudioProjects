@@ -4,33 +4,36 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Button;
+import android.widget.CheckBox;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    TextView t1;
-    TextView t2;
-    Button b1,b2;
-
+    CheckBox c1,c2,c3;
     @Override
     public void onCreate(Bundle savedInstance){
         super.onCreate(savedInstance);
         setContentView(R.layout.activity_main);
-        t1 = findViewById(R.id.editTextTextPersonName);
-        t2 = findViewById(R.id.editTextTextPersonName2);
-        b1 = findViewById(R.id.button);
-        b2 = findViewById(R.id.button2);
-        b1.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                b1.setText(t1.getText());
-            }
-        });
+        c1 = findViewById(R.id.checkBox);
+        c2 = findViewById(R.id.checkBox2);
+        c3 = findViewById(R.id.checkBox3);
+        c1.setOnClickListener(this);
+        c2.setOnClickListener(this);
+        c3.setOnClickListener(this);
     }
 
-
-    public void forButton2(View v) {
-        b2.setText(t2.getText());
+    @Override
+    public void onClick(View v){
+        switch (v.getId()){
+            case R.id.checkBox:
+                c1.setText(Integer.toString(R.id.checkBox));
+                break;
+            case R.id.checkBox2:
+                c2.setText(Integer.toString(R.id.checkBox2));
+                break;
+            case R.id.checkBox3:
+                c3.setText(Integer.toString(R.id.checkBox3));
+                break;
+        }
     }
+
 }
