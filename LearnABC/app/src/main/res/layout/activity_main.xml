@@ -29,7 +29,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <ImageButton
                     android:id="@+id/btnA"
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
@@ -38,9 +38,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconA"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:id="@+id/btnB"
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
@@ -49,9 +52,13 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconB"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    />
 
-                <Button
+                <ImageButton
                     android:id="@+id/btnC"
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
@@ -60,9 +67,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconC"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:id="@+id/btnD"
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
@@ -71,7 +81,10 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconD"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
             </LinearLayout>
 
@@ -80,7 +93,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -88,9 +101,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconE"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -98,9 +114,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconF"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -108,9 +127,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconG"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -118,7 +140,10 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconH"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
             </LinearLayout>
 
@@ -127,7 +152,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -135,9 +160,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconI"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -145,9 +173,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconJ"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -155,9 +186,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconK"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -165,7 +199,10 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconL"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
             </LinearLayout>
 
@@ -174,7 +211,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -182,9 +219,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconM"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -192,9 +232,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconN"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -202,9 +245,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconO"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -212,7 +258,10 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconP"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
             </LinearLayout>
 
@@ -221,7 +270,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -229,9 +278,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconQ"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -239,9 +291,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconR"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -249,9 +304,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconS"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -259,7 +317,10 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconT"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
             </LinearLayout>
 
@@ -268,7 +329,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -276,9 +337,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconU"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -286,9 +350,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconV"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -296,9 +363,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconW"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -306,7 +376,10 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconX"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
             </LinearLayout>
 
@@ -315,7 +388,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -323,9 +396,12 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconY"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
-                <Button
+                <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="93dp"
                     android:layout_marginStart="5px"
@@ -333,7 +409,10 @@
                     android:layout_marginEnd="5px"
                     android:layout_marginBottom="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:src="@drawable/iconZ"
+                    android:adjustViewBounds="true"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"/>
 
             </LinearLayout>
         </LinearLayout>
