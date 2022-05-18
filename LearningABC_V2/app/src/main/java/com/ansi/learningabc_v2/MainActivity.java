@@ -143,5 +143,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         return image;
     }
-
+//Resources kese add krte hain
+//Kese sab views k liye mantain krein layout ko expand ya shrink
 }
