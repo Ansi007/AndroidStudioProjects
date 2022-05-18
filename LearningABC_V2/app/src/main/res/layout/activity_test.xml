@@ -28,7 +28,7 @@
         app:layout_constraintGuide_percent="0.1" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/optionImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,7 +50,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btnOption2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/optionImage"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnOption1"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/optionImage"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
