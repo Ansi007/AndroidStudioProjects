@@ -83,10 +83,11 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:src="@drawable/icond"
                     android:adjustViewBounds="true"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"/>
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icond"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
             </LinearLayout>
 
@@ -135,7 +136,8 @@
                     android:adjustViewBounds="true"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/icong" />
+                    android:src="@drawable/icong"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/btnH"
@@ -167,10 +169,11 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:src="@drawable/iconi"
                     android:adjustViewBounds="true"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"/>
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconi"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/btnJ"
@@ -230,10 +233,11 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:src="@drawable/iconm"
                     android:adjustViewBounds="true"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"/>
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconm"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/btnN"
@@ -272,10 +276,11 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:src="@drawable/iconp"
                     android:adjustViewBounds="true"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"/>
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconp"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
             </LinearLayout>
 
@@ -293,10 +298,11 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:src="@drawable/iconq"
                     android:adjustViewBounds="true"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"/>
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconq"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/btnR"
@@ -307,10 +313,11 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:src="@drawable/iconr"
                     android:adjustViewBounds="true"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"/>
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconr"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/btnS"
@@ -321,10 +328,11 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:src="@drawable/icons"
                     android:adjustViewBounds="true"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"/>
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icons"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/btnT"
@@ -335,10 +343,11 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:src="@drawable/icont"
                     android:adjustViewBounds="true"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"/>
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icont"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
             </LinearLayout>
 
@@ -370,10 +379,11 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:src="@drawable/iconv"
                     android:adjustViewBounds="true"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"/>
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconv"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/btnW"
@@ -433,10 +443,11 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:src="@drawable/iconz"
                     android:adjustViewBounds="true"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"/>
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconz"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
             </LinearLayout>
         </LinearLayout>
