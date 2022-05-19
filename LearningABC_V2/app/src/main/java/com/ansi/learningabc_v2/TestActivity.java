@@ -3,7 +3,9 @@ package com.ansi.learningabc_v2;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -13,6 +15,9 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
     ImageView optionImage;
     ImageButton[] optionButtons;
     AlertDialog.Builder builder;
+
+    int saveImgId,opt[],saveCorrectAnswer;
+    static boolean rotated = false;
 
     int[] images = {
             R.drawable.acorn,R.drawable.alien,
@@ -47,8 +52,10 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_test);
         initialize();
         setOnClickListeners();
-        int imageId = setRandomImage();
-        setOptionImages(imageId);
+        if(!rotated) {
+            int imageId = setRandomImage();
+            setOptionImages(imageId);
+        }
     }
 
     void initialize(){
@@ -78,6 +85,7 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     void setOptionImages(int imageId) {
+        saveImgId = imageId;
         String imageName = getResources().getResourceName(imageId);
         imageName = imageName.substring(imageName.indexOf('/') + 1,imageName.length());
         char firstChar = imageName.charAt(0); //
@@ -86,8 +94,11 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
         };
         int index = getRandom(0,optionButtons.length - 1); //random index
         correctAnswer = optionButtons[index].getId(); //Id of correct option button
+        saveCorrectAnswer = correctAnswer;
+        opt = new int[4];
         int iconIndex = firstChar - 'a';
         optionButtons[index].setImageResource(iconImages[iconIndex]); //Make any option correct answer
+        opt[index] = iconImages[iconIndex];
         imagesAssignedButtons[index] = true;
         iconImagesAssigned = new boolean[26];
         iconImagesAssigned[iconIndex] = true;
@@ -99,6 +110,7 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 iconImagesAssigned[randomIconIndex] = true;
                 optionButtons[i].setImageResource(iconImages[randomIconIndex]); //Make any option correct answer
+                opt[i] = iconImages[randomIconIndex];
             }
         }
     }
@@ -119,6 +131,31 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
         else {
             alert.setTitle("Oh you chose it wrong, TRY AGAIN!");
             alert.show();
+        }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        rotated = true;
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("Image",saveImgId);
+        savedInstanceState.putInt("Correct",saveCorrectAnswer);
+        for(int i = 0; i < opt.length; i++) {
+            String I = Integer.toString(i);
+            savedInstanceState.putInt(I,opt[i]);
+        }
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        int imageId = savedInstanceState.getInt("Image");
+        optionImage.setImageResource(imageId);
+        correctAnswer =  savedInstanceState.getInt("Correct");
+        for(int i = 0; i < 4; i++){
+            String I = Integer.toString(i);
+            int index = savedInstanceState.getInt(I);
+            optionButtons[i].setImageResource(index);
         }
     }
 }
