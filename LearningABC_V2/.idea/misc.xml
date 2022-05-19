@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Anns/AndroidStudioProjects/LearningABC_V2/app/src/main/res/layout-land/activity_main.xml" value="0.2703125" />
+        <entry key="..\:/Users/Anns/AndroidStudioProjects/LearningABC_V2/app/src/main/res/layout-land/activity_show_image.xml" value="0.2703125" />
+        <entry key="..\:/Users/Anns/AndroidStudioProjects/LearningABC_V2/app/src/main/res/layout-land/activity_splash.xml" value="0.22" />
+        <entry key="..\:/Users/Anns/AndroidStudioProjects/LearningABC_V2/app/src/main/res/layout-land/activity_test.xml" value="0.2703125" />
         <entry key="..\:/Users/Anns/AndroidStudioProjects/LearningABC_V2/app/src/main/res/layout/activity_main.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Anns/AndroidStudioProjects/LearningABC_V2/app/src/main/res/layout/activity_show_image.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Anns/AndroidStudioProjects/LearningABC_V2/app/src/main/res/layout/activity_splash.xml" value="0.20462962962962963" />
-        <entry key="..\:/Users/Anns/AndroidStudioProjects/LearningABC_V2/app/src/main/res/layout/activity_test.xml" value="0.25" />
+        <entry key="..\:/Users/Anns/AndroidStudioProjects/LearningABC_V2/app/src/main/res/layout/activity_test.xml" value="0.22" />
       </map>
     </option>
   </component>
