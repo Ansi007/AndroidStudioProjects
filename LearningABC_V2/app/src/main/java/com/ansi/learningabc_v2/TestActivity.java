@@ -119,17 +119,14 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         AlertDialog alert = builder.create();
         if(view.getId() == correctAnswer){
-            //Creating dialog box
-            //Setting the title manually
-            alert.setTitle("Congratulations");
+            alert.setTitle("Congratulations!\n" +
+                    "You Guessed it right, Let's do another one\n");
             alert.show();
-         //   finish();
-         //   startActivity(getIntent());
             int imageId = setRandomImage();
             setOptionImages(imageId);
         }
         else {
-            alert.setTitle("Oh you chose it wrong, TRY AGAIN!");
+            alert.setTitle("Oh you chose it wrong, TRY AGAIN!\n");
             alert.show();
         }
     }

@@ -8,23 +8,22 @@
     tools:context=".SplashActivity">
 
     <Button
-        android:id="@+id/btnTest"
+        android:id="@+id/btnRepository"
         android:layout_width="167dp"
         android:layout_height="80dp"
-        android:layout_marginTop="129dp"
-        android:text="@string/test"
+        android:layout_marginTop="52dp"
+        android:text="@string/repository"
         android:textColor="#80DEEA"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnLearn"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTest"
         tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btnLearn"
         android:layout_width="167dp"
         android:layout_height="80dp"
-        android:layout_marginTop="129dp"
+        android:layout_marginTop="88dp"
         android:text="@string/learn"
         android:textColor="#80DEEA"
         app:layout_constraintEnd_toStartOf="@+id/btnTest"
@@ -33,34 +32,47 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         tools:ignore="TextContrastCheck" />
 
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="167dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/test"
+        android:textColor="#80DEEA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnLearn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="TextContrastCheck" />
+
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="120dp"
+        android:layout_width="417dp"
+        android:layout_height="122dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:srcCompat="@drawable/icona"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/icona" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.15" />
+        app:layout_constraintGuide_percent="0.1" />
 
-    <Button
-        android:id="@+id/btnRepository"
-        android:layout_width="167dp"
-        android:layout_height="80dp"
-        android:text="@string/repository"
-        android:textColor="#80DEEA"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="123dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTest"
-        app:layout_constraintVertical_bias="0.273"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRepository"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/repo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
