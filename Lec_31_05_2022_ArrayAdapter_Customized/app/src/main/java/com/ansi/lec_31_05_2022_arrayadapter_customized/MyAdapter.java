@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -29,9 +30,11 @@ public class MyAdapter extends ArrayAdapter<Student> {
         TextView textViewName = convertView.findViewById(R.id.textViewName);
         textViewName.setText(student.getName());
         TextView textViewId = convertView.findViewById(R.id.textViewId);
-        textViewName.setText(student.getId());
+        textViewId.setText(student.getId());
         TextView textViewSection = convertView.findViewById(R.id.textViewSection);
-        textViewName.setText(student.getSection());
+        textViewSection.setText(student.getSection());
+        ImageView imageView = convertView.findViewById(R.id.imageView);
+        imageView.setImageResource(student.getImageId());
         return convertView;
     }
 }
