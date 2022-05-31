@@ -12,6 +12,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TextView;
+
 import java.util.List;
 
 public class MyAdapter extends ArrayAdapter<Student> {
@@ -24,6 +26,12 @@ public class MyAdapter extends ArrayAdapter<Student> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Student student = getItem(position);
         convertView = LayoutInflater.from(getContext()).inflate(R.layout.studentlayout,parent,false);
+        TextView textViewName = convertView.findViewById(R.id.textViewName);
+        textViewName.setText(student.getName());
+        TextView textViewId = convertView.findViewById(R.id.textViewId);
+        textViewName.setText(student.getId());
+        TextView textViewSection = convertView.findViewById(R.id.textViewSection);
+        textViewName.setText(student.getSection());
         return convertView;
     }
 }
