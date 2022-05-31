@@ -16,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mainListView = findViewById(R.id.mainListView);
-        myStudentList.add(new Student("Usman","0","SE",R.drawable.ic_launcher_foreground));
-        myStudentList.add(new Student("Saad Bot","1","SE",R.drawable.ic_launcher_background));
-        myStudentList.add(new Student("11:52","2","SE",R.drawable.ic_launcher_foreground));
-        myStudentList.add(new Student("Ahmad","3","SE",R.drawable.ic_launcher_background));
+        myStudentList.add(new Student("Usman","0","SE",R.drawable.baby));
+        myStudentList.add(new Student("Saad Bot","1","SE",R.drawable.baby));
+        myStudentList.add(new Student("11:52","2","SE",R.drawable.baby));
+        myStudentList.add(new Student("Ahmad","3","SE",R.drawable.baby));
         MyAdapter myAdapter = new MyAdapter(this,0,myStudentList);
         mainListView.setAdapter(myAdapter);
     }

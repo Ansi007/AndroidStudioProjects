@@ -1,6 +1,7 @@
 
 package com.ansi.lec_31_05_2022_arrayadapter_customized;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +36,13 @@ public class MyAdapter extends ArrayAdapter<Student> {
         textViewSection.setText(student.getSection());
         ImageView imageView = convertView.findViewById(R.id.imageView);
         imageView.setImageResource(student.getImageId());
+
+        textViewName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("Tag",textViewName.getText().toString());
+            }
+        });
         return convertView;
     }
 }
