@@ -44,8 +44,9 @@ public class MyAdapter extends ArrayAdapter<AlphabetWithImage> {
             public void onClick(View view) {
                 int imageId = alpha.getImageId();
                 Context context = getContext();
-                Intent intent = new Intent(context,ShowImageActivity.class);
-                intent.putExtra("Image",R.drawable.applefull);
+                Intent intent = new Intent(context,ShowImageWithLabelActivity.class);
+                intent.putExtra("Alphabet",alpha.getAlphabet());
+                intent.putExtra("Image",imageId);
                 context.startActivity(intent);
             }
         });
