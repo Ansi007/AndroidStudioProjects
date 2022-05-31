@@ -50,98 +50,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        int image = selectImage(view.getId());
-        Log.d("NumberMain",Integer.toString(image));
-        Intent intent = new Intent(MainActivity.this,ShowImageActivity.class);
-        intent.putExtra("Image",image);
+        int buttonId = view.getId();
+        Intent intent = new Intent(MainActivity.this,list_activity.class);
+        intent.putExtra("Button",buttonId);
         startActivity(intent);
-    }
-
-    int selectImage(int id) {
-        int image = -1;
-        switch (id){
-            case R.id.btnA:
-                image = R.drawable.imagea;
-                break;
-            case R.id.btnB:
-                image = R.drawable.imageb;
-                break;
-            case R.id.btnC:
-                image = R.drawable.imagec;
-                break;
-            case R.id.btnD:
-                image = R.drawable.imaged;
-                break;
-            case R.id.btnE:
-                image = R.drawable.imagee;
-                break;
-            case R.id.btnF:
-                image = R.drawable.imagef;
-                break;
-            case R.id.btnG:
-                image = R.drawable.imageg;
-                break;
-            case R.id.btnH:
-                image = R.drawable.imageh;
-                break;
-            case R.id.btnI:
-                image = R.drawable.imagei;
-                break;
-            case R.id.btnJ:
-                image = R.drawable.imagej;
-                break;
-            case R.id.btnK:
-                image = R.drawable.imagek;
-                break;
-            case R.id.btnL:
-                image = R.drawable.imagel;
-                break;
-            case R.id.btnM:
-                image = R.drawable.imagem;
-                break;
-            case R.id.btnN:
-                image = R.drawable.imagen;
-                break;
-            case R.id.btnO:
-                image = R.drawable.imageo;
-                break;
-            case R.id.btnP:
-                image = R.drawable.imagep;
-                break;
-            case R.id.btnQ:
-                image = R.drawable.imageq;
-                break;
-            case R.id.btnR:
-                image = R.drawable.imager;
-                break;
-            case R.id.btnS:
-                image = R.drawable.images;
-                break;
-            case R.id.btnT:
-                image = R.drawable.imaget;
-                break;
-            case R.id.btnU:
-                image = R.drawable.imageu;
-                break;
-            case R.id.btnV:
-                image = R.drawable.imagev;
-                break;
-            case R.id.btnW:
-                image = R.drawable.imagew;
-                break;
-            case R.id.btnX:
-                image = R.drawable.imagex;
-                break;
-            case R.id.btnY:
-                image = R.drawable.imagey;
-                break;
-            case R.id.btnZ:
-                image = R.drawable.imagez;
-                break;
-            default:
-                break;
-        }
-        return image;
     }
 //Resources kese add krte hain folder by folder
 //Kese sab views k liye mantain krein layout ko expand ya shrink
