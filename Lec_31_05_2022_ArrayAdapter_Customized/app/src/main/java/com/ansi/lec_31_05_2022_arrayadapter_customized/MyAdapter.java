@@ -1,6 +1,7 @@
 
 package com.ansi.lec_31_05_2022_arrayadapter_customized;
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,6 +41,7 @@ public class MyAdapter extends ArrayAdapter<Student> {
         textViewName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Intent intent = new Intent(getContext());
                 Log.d("Tag",textViewName.getText().toString());
             }
         });

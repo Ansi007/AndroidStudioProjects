@@ -42,7 +42,8 @@
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/icona"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:background="@null"/>
 
                 <ImageButton
                     android:id="@+id/btnB"
@@ -57,7 +58,7 @@
                     android:adjustViewBounds="true"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
-                    />
+                    android:background="@null"/>
 
                 <ImageButton
                     android:id="@+id/btnC"
@@ -72,7 +73,7 @@
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconc"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    tools:ignore="SpeakableTextPresentCheck" android:background="@null"/>
 
                 <ImageButton
                     android:id="@+id/btnD"
@@ -83,7 +84,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/icond"
@@ -105,7 +106,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/icone" />
@@ -119,7 +120,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconf" />
@@ -133,7 +134,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/icong"
@@ -149,7 +150,7 @@
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
                     android:src="@drawable/iconh"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"/>
 
@@ -169,7 +170,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconi"
@@ -185,7 +186,7 @@
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
                     android:src="@drawable/iconj"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"/>
 
@@ -199,7 +200,7 @@
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
                     android:src="@drawable/iconk"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"/>
 
@@ -213,7 +214,7 @@
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
                     android:src="@drawable/iconl"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"/>
 
@@ -233,7 +234,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconm"
@@ -249,7 +250,7 @@
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
                     android:src="@drawable/iconn"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"/>
 
@@ -263,7 +264,7 @@
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
                     android:src="@drawable/icono"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"/>
 
@@ -276,7 +277,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconp"
@@ -298,7 +299,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconq"
@@ -313,7 +314,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconr"
@@ -328,7 +329,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/icons"
@@ -343,7 +344,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/icont"
@@ -366,7 +367,7 @@
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
                     android:src="@drawable/iconu"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"/>
 
@@ -379,7 +380,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconv"
@@ -395,7 +396,7 @@
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
                     android:src="@drawable/iconw"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"/>
 
@@ -409,7 +410,7 @@
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
                     android:src="@drawable/iconx"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"/>
 
@@ -430,7 +431,7 @@
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
                     android:src="@drawable/icony"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"/>
 
@@ -443,7 +444,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconz"
