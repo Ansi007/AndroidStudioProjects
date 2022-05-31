@@ -1,6 +1,8 @@
 package com.ansi.learningabc_v2;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +16,6 @@ import androidx.annotation.Nullable;
 import java.util.List;
 
 public class MyAdapter extends ArrayAdapter<AlphabetWithImage> {
-
     public MyAdapter(@NonNull Context context, int resource, @NonNull List<AlphabetWithImage> objects) {
         super(context, resource, objects);
     }
@@ -28,6 +29,26 @@ public class MyAdapter extends ArrayAdapter<AlphabetWithImage> {
         image.setImageResource(alpha.getImageId());
         TextView alphabetTextView = convertView.findViewById(R.id.textViewLetter);
         alphabetTextView.setText(alpha.getAlphabet());
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int imageId = alpha.getImageId();
+                Context context = getContext();
+                Intent intent = new Intent(context,ShowImageActivity.class);
+                intent.putExtra("Image",imageId);
+                context.startActivity(intent);
+            }
+        });
+        alphabetTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int imageId = alpha.getImageId();
+                Context context = getContext();
+                Intent intent = new Intent(context,ShowImageActivity.class);
+                intent.putExtra("Image",R.drawable.applefull);
+                context.startActivity(intent);
+            }
+        });
         return convertView;
     }
 }
