@@ -19,6 +19,7 @@ public class ShowImageActivity extends AppCompatActivity {
         if(image == -1){
             //Error Loading
         }
+        Log.d("IMAGEIDNEW", String.valueOf(image));
         imageView = findViewById(R.id.imageView);
         imageView.setImageResource(image);
     }

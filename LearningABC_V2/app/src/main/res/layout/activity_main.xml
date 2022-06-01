@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF"
+        android:background="#2BBFBB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -40,11 +39,11 @@
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/icona"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:background="@null"/>
 
                 <ImageButton
                     android:id="@+id/btnB"
@@ -55,11 +54,11 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
+                    android:src="@drawable/iconb"
                     android:adjustViewBounds="true"
-                    android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/iconb" />
+                    android:background="@null"/>
 
                 <ImageButton
                     android:id="@+id/btnC"
@@ -71,11 +70,10 @@
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconc"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    tools:ignore="SpeakableTextPresentCheck" android:background="@null"/>
 
                 <ImageButton
                     android:id="@+id/btnD"
@@ -86,8 +84,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/icond"
@@ -109,8 +106,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/icone" />
@@ -124,8 +120,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconf" />
@@ -139,8 +134,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/icong"
@@ -155,11 +149,10 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:src="@drawable/iconh"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/iconh" />
+                    android:scaleType="fitCenter"/>
 
             </LinearLayout>
 
@@ -177,8 +170,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconi"
@@ -193,11 +185,10 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:src="@drawable/iconj"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/iconj" />
+                    android:scaleType="fitCenter"/>
 
                 <ImageButton
                     android:id="@+id/btnK"
@@ -208,11 +199,10 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:src="@drawable/iconk"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/iconk" />
+                    android:scaleType="fitCenter"/>
 
                 <ImageButton
                     android:id="@+id/btnL"
@@ -223,11 +213,10 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:src="@drawable/iconl"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/iconl" />
+                    android:scaleType="fitCenter"/>
 
             </LinearLayout>
 
@@ -245,8 +234,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconm"
@@ -261,11 +249,10 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:src="@drawable/iconn"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/iconn" />
+                    android:scaleType="fitCenter"/>
 
                 <ImageButton
                     android:id="@+id/btnO"
@@ -276,11 +263,10 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:src="@drawable/icono"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/icono" />
+                    android:scaleType="fitCenter"/>
 
                 <ImageButton
                     android:id="@+id/btnP"
@@ -291,8 +277,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconp"
@@ -314,8 +299,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconq"
@@ -330,8 +314,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconr"
@@ -346,8 +329,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/icons"
@@ -362,8 +344,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/icont"
@@ -385,11 +366,10 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:src="@drawable/iconu"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/iconu" />
+                    android:scaleType="fitCenter"/>
 
                 <ImageButton
                     android:id="@+id/btnV"
@@ -400,8 +380,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconv"
@@ -416,11 +395,10 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:src="@drawable/iconw"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/iconw" />
+                    android:scaleType="fitCenter"/>
 
                 <ImageButton
                     android:id="@+id/btnX"
@@ -431,11 +409,10 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:src="@drawable/iconx"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/iconx" />
+                    android:scaleType="fitCenter"/>
 
             </LinearLayout>
 
@@ -453,11 +430,10 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:src="@drawable/icony"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/icony" />
+                    android:scaleType="fitCenter"/>
 
                 <ImageButton
                     android:id="@+id/btnZ"
@@ -468,8 +444,7 @@
                     android:layout_marginEnd="2dp"
                     android:layout_marginBottom="2dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:adjustViewBounds="true" android:background="@null"
                     android:padding="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/iconz"

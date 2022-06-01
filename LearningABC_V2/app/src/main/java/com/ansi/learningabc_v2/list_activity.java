@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class list_activity extends AppCompatActivity {
     ListView mainListView;
     ArrayList<AlphabetWithImage> myImageList = new ArrayList<AlphabetWithImage>();
+<<<<<<< HEAD
     int imagesA[] = {R.drawable.apple,R.drawable.airplane,R.drawable.ant,R.drawable.arrow,R.drawable.art};
     int imagesB[] = {R.drawable.box,R.drawable.boy,R.drawable.bus,R.drawable.bus,R.drawable.bed};
     int imagesC[] = {R.drawable.cake,R.drawable.car,R.drawable.candy,R.drawable.cat,R.drawable.cow};
@@ -37,15 +38,21 @@ public class list_activity extends AppCompatActivity {
     int imagesY[] = {R.drawable.yacht,R.drawable.yell,R.drawable.yawn,R.drawable.yogurt,R.drawable.yoyo};
     int imagesZ[] = {R.drawable.zero,R.drawable.zero,R.drawable.zip,R.drawable.zoo,R.drawable.zigzag};
     int loopArray[];
+=======
+    int imagesA[] = {R.drawable.apple,R.drawable.airplane};
+>>>>>>> parent of 0c46db9 (New Images Added)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
         mainListView = findViewById(R.id.mainList);
-        setData();
+        for (int i : imagesA) {
+            myImageList.add(new AlphabetWithImage(i,"Aa"));
+        }
         MyAdapter myAdapter = new MyAdapter(this,0,myImageList);
         mainListView.setAdapter(myAdapter);
     }
+<<<<<<< HEAD
 
     void setData() {
         int buttonId = getIntent().getIntExtra("ButtonId",-1);
@@ -161,4 +168,6 @@ public class list_activity extends AppCompatActivity {
             myImageList.add(new AlphabetWithImage(i,alphabet));
         }
     }
+=======
+>>>>>>> parent of 0c46db9 (New Images Added)
 }

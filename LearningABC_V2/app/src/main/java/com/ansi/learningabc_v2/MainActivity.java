@@ -52,7 +52,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         int buttonId = view.getId();
         Intent intent = new Intent(MainActivity.this,list_activity.class);
-        intent.putExtra("ButtonId",buttonId);
+        intent.putExtra("Button",buttonId);
         startActivity(intent);
     }
+//Resources kese add krte hain folder by folder
+//Kese sab views k liye mantain krein layout ko expand ya shrink
 }

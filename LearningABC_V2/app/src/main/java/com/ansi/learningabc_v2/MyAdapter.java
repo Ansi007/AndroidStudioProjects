@@ -36,6 +36,7 @@ public class MyAdapter extends ArrayAdapter<AlphabetWithImage> {
                 Context context = getContext();
                 Intent intent = new Intent(context,ShowImageActivity.class);
                 intent.putExtra("Image",imageId);
+                Log.d("IMAGEIDOLD", String.valueOf(imageId));
                 context.startActivity(intent);
             }
         });
