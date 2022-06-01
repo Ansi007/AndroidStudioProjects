@@ -20,18 +20,7 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
     static boolean rotated = false;
 
     int[] images = {
-            R.drawable.acorn,R.drawable.alien,
-            R.drawable.alligator,R.drawable.angel,
-            R.drawable.apple,R.drawable.apron,
-            R.drawable.astronaut,R.drawable.ball,R.drawable.bird,R.drawable.book,
-            R.drawable.cake,R.drawable.castle,R.drawable.dad,R.drawable.darts,
-            R.drawable.egg,R.drawable.elevator,R.drawable.fork,R.drawable.frog,
-            R.drawable.gift,R.drawable.goat,R.drawable.hat,R.drawable.hen,
-            R.drawable.icecream,R.drawable.jam,R.drawable.key,R.drawable.laugh,
-            R.drawable.map,R.drawable.nurse,R.drawable.open,R.drawable.panda,
-            R.drawable.queen,R.drawable.rain,R.drawable.socks,R.drawable.toys,
-            R.drawable.upset,R.drawable.van,R.drawable.watermelon,R.drawable.xmas,
-            R.drawable.yarn,R.drawable.zero
+            R.drawable.zero
     };
 
     int[] iconImages = {
