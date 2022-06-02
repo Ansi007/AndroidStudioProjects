@@ -11,7 +11,7 @@ public class list_activity extends AppCompatActivity {
     ListView mainListView;
     ArrayList<AlphabetWithImage> myImageList = new ArrayList<AlphabetWithImage>();
     int imagesA[] = {R.drawable.apple,R.drawable.airplane,R.drawable.ant,R.drawable.arrow,R.drawable.art};
-    int imagesB[] = {R.drawable.box,R.drawable.boy,R.drawable.bus,R.drawable.bus,R.drawable.bed};
+    int imagesB[] = {R.drawable.box,R.drawable.boy,R.drawable.bus,R.drawable.bed};
     int imagesC[] = {R.drawable.cake,R.drawable.car,R.drawable.candy,R.drawable.cat,R.drawable.cow};
     int imagesD[] = {R.drawable.dog,R.drawable.drum,R.drawable.drink,R.drawable.ducky};
     int imagesE[] = {R.drawable.eagle,R.drawable.earth,R.drawable.elephant,R.drawable.eleven,R.drawable.eye};
