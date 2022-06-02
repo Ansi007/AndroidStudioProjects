@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     Button button;
     Button button2;
     Button button3;
+    String color = "";
+    String colors[] = {"Red","Blue","Green","Pink"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +65,29 @@ public class MainActivity extends AppCompatActivity {
                 alertDialog.show();
             }
         });
-        
+
+        button3 = findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Choose any color").setItems(colors, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        LayoutInflater layoutInflater = getLayoutInflater();
+                        View myLayout = layoutInflater.inflate(R.layout.customtoast,null);
+                        ImageView imageView = myLayout.findViewById(R.id.imageView2);
+                        imageView.setImageResource(R.drawable.ic_launcher_background);
+                        TextView textView = myLayout.findViewById(R.id.textView2);
+                        String text = colors[i];
+                        textView.setText(text);
+                        Toast toast = new Toast(getApplicationContext());
+                        toast.setView(myLayout);
+                        toast.show();
+                    }
+                });
+            }
+        });
+
     }
 }
