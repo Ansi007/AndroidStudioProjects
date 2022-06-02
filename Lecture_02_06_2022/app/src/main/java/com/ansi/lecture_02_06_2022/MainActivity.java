@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         LayoutInflater layoutInflater = getLayoutInflater();
-                        View myLayout = layoutInflater.inflate(R.layout.customtoast,null);
+                        View myLayout = layoutInflater.inflate(R.layout.customtoast, null);
                         ImageView imageView = myLayout.findViewById(R.id.imageView2);
                         imageView.setImageResource(R.drawable.ic_launcher_background);
                         TextView textView = myLayout.findViewById(R.id.textView2);
@@ -86,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
                         toast.show();
                     }
                 });
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
             }
         });
 
