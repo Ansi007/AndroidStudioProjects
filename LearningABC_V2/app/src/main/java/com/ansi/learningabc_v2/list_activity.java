@@ -35,7 +35,7 @@ public class list_activity extends AppCompatActivity {
     int imagesW[] = {R.drawable.watermelon,R.drawable.water,R.drawable.wizard,R.drawable.wolf,R.drawable.workout};
     int imagesX[] = {R.drawable.xray,R.drawable.xylophone};
     int imagesY[] = {R.drawable.yacht,R.drawable.yell,R.drawable.yawn,R.drawable.yogurt,R.drawable.yoyo};
-    int imagesZ[] = {R.drawable.zero,R.drawable.zero,R.drawable.zip,R.drawable.zoo,R.drawable.zigzag};
+    int imagesZ[] = {R.drawable.zero,R.drawable.zip,R.drawable.zoo,R.drawable.zigzag};
     int loopArray[];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
