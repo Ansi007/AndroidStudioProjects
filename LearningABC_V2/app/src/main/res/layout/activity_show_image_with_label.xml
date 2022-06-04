@@ -19,15 +19,15 @@
     <TextView
         android:id="@+id/alphabetTextView"
         android:layout_width="0dp"
-        android:layout_height="110dp"
+        android:layout_height="125dp"
         android:background="#FCEAD5"
         android:text="Aa"
         android:textAlignment="center"
+        android:textAllCaps="false"
         android:textSize="96sp"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="@+id/nameTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
