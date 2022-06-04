@@ -20,18 +20,32 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
     static boolean rotated = false;
 
     int[] images = {
-            R.drawable.acorn,R.drawable.alien,
-            R.drawable.alligator,R.drawable.angel,
-            R.drawable.apple,R.drawable.apron,
-            R.drawable.astronaut,R.drawable.ball,R.drawable.bird,R.drawable.book,
-            R.drawable.cake,R.drawable.castle,R.drawable.dad,R.drawable.darts,
-            R.drawable.egg,R.drawable.elevator,R.drawable.fork,R.drawable.frog,
-            R.drawable.gift,R.drawable.goat,R.drawable.hat,R.drawable.hen,
-            R.drawable.icecream,R.drawable.jam,R.drawable.key,R.drawable.laugh,
-            R.drawable.map,R.drawable.nurse,R.drawable.open,R.drawable.panda,
-            R.drawable.queen,R.drawable.rain,R.drawable.socks,R.drawable.toys,
-            R.drawable.upset,R.drawable.van,R.drawable.watermelon,R.drawable.xmas,
-            R.drawable.yarn,R.drawable.zero
+            R.drawable.apple,R.drawable.airplane,R.drawable.ant,R.drawable.arrow,R.drawable.art,
+            R.drawable.box,R.drawable.boy,R.drawable.bus,R.drawable.bed,
+            R.drawable.cake,R.drawable.car,R.drawable.candy,R.drawable.cat,R.drawable.cow,
+            R.drawable.dog,R.drawable.drum,R.drawable.drink,R.drawable.ducky,
+            R.drawable.eagle,R.drawable.earth,R.drawable.elephant,R.drawable.eleven,R.drawable.eye,
+            R.drawable.frog,R.drawable.face,R.drawable.five,R.drawable.flower,R.drawable.fox,
+            R.drawable.giraffe,R.drawable.girl,R.drawable.gloves,R.drawable.glue,
+            R.drawable.hen,R.drawable.hammer,R.drawable.helicopter,R.drawable.hungry,R.drawable.house,
+            R.drawable.igloo,R.drawable.ink,R.drawable.iron,R.drawable.icecream,
+            R.drawable.jam,R.drawable.jeep,R.drawable.joker,R.drawable.jug,R.drawable.juice,
+            R.drawable.kangaroo,R.drawable.ketchup,R.drawable.kids,R.drawable.king,R.drawable.kite,
+            R.drawable.ladder,R.drawable.lamb,R.drawable.lamp,R.drawable.lava,R.drawable.lemon,
+            R.drawable.map,R.drawable.mango,R.drawable.mom,R.drawable.monkey,R.drawable.mouse,
+            R.drawable.nurse,R.drawable.nest,R.drawable.nails,R.drawable.notebook,R.drawable.nap,
+            R.drawable.octopus,R.drawable.one,R.drawable.ox,R.drawable.owl,R.drawable.orange,R.drawable.office,
+            R.drawable.pineapple,R.drawable.pizza,R.drawable.phone,R.drawable.pants,R.drawable.pen,
+            R.drawable.queen,R.drawable.quack,R.drawable.question,R.drawable.queue,R.drawable.quiet,
+            R.drawable.rainbow,R.drawable.road,R.drawable.rain,R.drawable.rope,
+            R.drawable.school,R.drawable.sleep,R.drawable.star,R.drawable.smile,R.drawable.sun,
+            R.drawable.table,R.drawable.tea,R.drawable.teacher,R.drawable.telephone,
+            R.drawable.umbrella,R.drawable.uncle,R.drawable.under,R.drawable.unicorn,R.drawable.uniform,
+            R.drawable.van,R.drawable.vet,R.drawable.virus,
+            R.drawable.watermelon,R.drawable.water,R.drawable.wizard,R.drawable.wolf,R.drawable.workout,
+            R.drawable.xray,R.drawable.xylophone,
+            R.drawable.yacht,R.drawable.yell,R.drawable.yawn,R.drawable.yogurt,R.drawable.yoyo,
+            R.drawable.zero,R.drawable.zero,R.drawable.zip,R.drawable.zoo,R.drawable.zigzag
     };
 
     int[] iconImages = {
@@ -41,7 +55,7 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
             R.drawable.iconm,R.drawable.iconn,R.drawable.icono,R.drawable.iconp,
             R.drawable.iconq,R.drawable.iconr,R.drawable.icons,R.drawable.icont,
             R.drawable.iconu,R.drawable.iconv,R.drawable.iconw,R.drawable.iconx,
-            R.drawable.icony,R.drawable.iconz
+            R.drawable.icony,R.drawable.iconz,
     };
 
     boolean[] iconImagesAssigned;
@@ -52,10 +66,8 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_test);
         initialize();
         setOnClickListeners();
-        if(!rotated) {
-            int imageId = setRandomImage();
-            setOptionImages(imageId);
-        }
+        int imageId = setRandomImage();
+        setOptionImages(imageId);
     }
 
     void initialize(){
