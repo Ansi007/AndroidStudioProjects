@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3CC2D8"
+    android:background="#FFFFFF"
     tools:context=".SplashActivity">
 
     <Button
         android:id="@+id/btnTest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="167dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="56dp"
         android:text="@string/test"
         android:textColor="#80DEEA"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRepository"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnLearn"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
@@ -22,47 +22,46 @@
 
     <Button
         android:id="@+id/btnRepository"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="167dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
         android:text="@string/repository"
         android:textColor="#80DEEA"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTest"
-        app:layout_constraintVertical_bias="0.271"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnTest"
+        app:layout_constraintTop_toTopOf="@+id/btnTest"
         tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btnLearn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="167dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="56dp"
         android:text="@string/learn"
         android:textColor="#80DEEA"
         app:layout_constraintEnd_toStartOf="@+id/btnTest"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         tools:ignore="TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="735dp"
+        android:layout_width="417dp"
         android:layout_height="122dp"
         android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:srcCompat="@drawable/icona" />
+        app:srcCompat="@drawable/mainicon" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.04" />
+        app:layout_constraintGuide_percent="0.1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
