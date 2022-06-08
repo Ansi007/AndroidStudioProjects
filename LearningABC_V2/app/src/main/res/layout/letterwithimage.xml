@@ -28,6 +28,7 @@
         android:layout_marginBottom="2dp"
         android:text="@string/aa"
         android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="96sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewShape"
         app:layout_constraintEnd_toEndOf="parent"
