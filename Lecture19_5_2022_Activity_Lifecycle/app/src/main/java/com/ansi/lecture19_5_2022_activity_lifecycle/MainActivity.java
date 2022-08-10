@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onPause(){
+    protected    void onPause(){
         super.onPause();
         Log.d("Tag","MainActivityOnPause");
     }
@@ -73,5 +73,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestart(){
         super.onRestart();
         Log.d("Tag","MainActivityOnRestart");
+        //Revision
     }
 }
