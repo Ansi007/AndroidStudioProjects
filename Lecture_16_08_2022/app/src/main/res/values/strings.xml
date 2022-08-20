@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lecture_16_08_2022</string>
+    <string name="get_list">Get List</string>
+    <string name="add_student">Add Student</string>
+    <string name="update_student">Update Student</string>
+    <string name="remove_student">Remove Student</string>
 </resources>

@@ -2,8 +2,10 @@ package com.ansi.lecture_16_08_2022;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
     EditText editName, editRollNumber;
     Switch switchIsActive;
     ListView listViewStudent;
+    List<StudentModel> list;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -54,30 +58,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 DBHelper dbHelper = new DBHelper(MainActivity.this);
-                List<StudentModel> list = dbHelper.getAllStudents();
+                list = dbHelper.getAllStudents();
                 ArrayAdapter arrayAdapter = new ArrayAdapter<StudentModel>
                         (MainActivity.this, android.R.layout.simple_list_item_1,list);
+                listViewStudent.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                        Intent intent = new Intent(MainActivity.this, StudentLayout.class);
+                        StudentModel student = list.get(i);
+                        intent.putExtra("Name", student.getName());
+                        intent.putExtra("RollNo", student.getRollNmber());
+                        intent.putExtra("IsEnroll", student.isEnroll());
+                        MainActivity.this.startActivity(intent);
+                    }
+                });
                 listViewStudent.setAdapter(arrayAdapter);
             }
         });
 
-        buttonRemove.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DBHelper dbHelper = new DBHelper(MainActivity.this);
-                String name = editName.getText().toString();
-                dbHelper.removeStudent(name);
-            }
-        });
-
-        buttonUpdate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DBHelper dbHelper = new DBHelper(MainActivity.this);
-                String name = editName.getText().toString();
-                StudentModel student = new StudentModel(editName.getText().toString(), Integer.parseInt(editRollNumber.getText().toString()), switchIsActive.isChecked());
-                dbHelper.updateStudent(student);
-            }
-        });
     }
 }

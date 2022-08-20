@@ -48,30 +48,30 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    public void removeStudent(String name){
+    public void removeStudent(String id){
         // on below line we are creating
         // a variable to write our database.
         SQLiteDatabase db = this.getWritableDatabase();
 
         // on below line we are calling a method to delete our
         // course and we are comparing it with our course name.
-        db.delete(STUDENT_TABLE, "StudentName=?", new String[]{name});
+        db.delete(STUDENT_TABLE, "ID=?", new String[]{id});
         db.close();
     }
 
-    public void updateStudent(StudentModel newData) {
+    public void updateStudent(StudentModel newData, String id) {
         // calling a method to get writable database.
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
         // on below line we are passing all values
-        // along with its key and value pair.
+        cv.put(STUDENT_NAME, newData.getName());
         cv.put(STUDENT_ROLL, newData.getRollNmber());
         cv.put(STUDENT_ENROLL, newData.isEnroll());
 
         // on below line we are calling a update method to update our database and passing our values.
         // and we are comparing it with name of our course which is stored in original name variable.
-        db.update(STUDENT_TABLE, cv, "StudentName=?", new String[]{newData.getName()});
+        db.update(STUDENT_TABLE, cv, "ID=?", new String[]{id});
         db.close();
     }
 
