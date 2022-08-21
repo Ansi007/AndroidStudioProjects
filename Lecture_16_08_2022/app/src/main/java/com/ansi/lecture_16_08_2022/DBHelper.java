@@ -48,18 +48,18 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    public void removeStudent(String id){
+    public void removeStudent(String name){
         // on below line we are creating
         // a variable to write our database.
         SQLiteDatabase db = this.getWritableDatabase();
 
         // on below line we are calling a method to delete our
         // course and we are comparing it with our course name.
-        db.delete(STUDENT_TABLE, "ID=?", new String[]{id});
+        db.delete(STUDENT_TABLE, STUDENT_NAME + "=?", new String[]{name});
         db.close();
     }
 
-    public void updateStudent(StudentModel newData, String id) {
+    public void updateStudent(String name, StudentModel newData) {
         // calling a method to get writable database.
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -71,7 +71,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         // on below line we are calling a update method to update our database and passing our values.
         // and we are comparing it with name of our course which is stored in original name variable.
-        db.update(STUDENT_TABLE, cv, "ID=?", new String[]{id});
+        db.update(STUDENT_TABLE, cv, STUDENT_NAME + "=?", new String[]{name});
         db.close();
     }
 
@@ -85,7 +85,7 @@ public class DBHelper extends SQLiteOpenHelper {
         if (cursorCourses.moveToFirst()) {
             do {
                 studentArrayList.add(new StudentModel(cursorCourses.getString(1),
-                        cursorCourses.getInt(2),
+                        cursorCourses.getString(2),
                         cursorCourses.getInt(3) == 1 ? true : false));
             } while (cursorCourses.moveToNext());
 

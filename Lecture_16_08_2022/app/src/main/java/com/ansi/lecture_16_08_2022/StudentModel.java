@@ -3,7 +3,7 @@ package com.ansi.lecture_16_08_2022;
 
 public class StudentModel {
     private String name;
-    private int rollNmber;
+    private String rollNmber;
     private boolean isEnroll;
 
     @Override
@@ -15,7 +15,7 @@ public class StudentModel {
                 '}';
     }
 
-    public StudentModel(String name, int rollNmber, boolean isEnroll) {
+    public StudentModel(String name, String rollNmber, boolean isEnroll) {
         this.name = name;
         this.rollNmber = rollNmber;
         this.isEnroll = isEnroll;
@@ -29,11 +29,11 @@ public class StudentModel {
         this.name = name;
     }
 
-    public int getRollNmber() {
+    public String getRollNmber() {
         return rollNmber;
     }
 
-    public void setRollNmber(int rollNmber) {
+    public void setRollNmber(String rollNmber) {
         this.rollNmber = rollNmber;
     }
 

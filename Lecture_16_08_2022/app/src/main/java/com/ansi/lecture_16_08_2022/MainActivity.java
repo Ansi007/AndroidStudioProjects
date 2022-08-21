@@ -17,7 +17,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonAdd, buttonViewAll, buttonRemove, buttonUpdate;
+    Button buttonAdd, buttonViewAll;
     EditText editName, editRollNumber;
     Switch switchIsActive;
     ListView listViewStudent;
@@ -34,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
         editRollNumber = findViewById(R.id.editTextRollNumber);
         switchIsActive = findViewById(R.id.switchStudent);
         listViewStudent = findViewById(R.id.listViewStudent);
-        buttonRemove = findViewById(R.id.removeButton);
-        buttonUpdate = findViewById(R.id.updateButton);
 
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             StudentModel studentModel;
@@ -43,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    studentModel = new StudentModel(editName.getText().toString(), Integer.parseInt(editRollNumber.getText().toString()), switchIsActive.isChecked());
+                    studentModel = new StudentModel(editName.getText().toString(), editRollNumber.getText().toString(), switchIsActive.isChecked());
                     //Toast.makeText(MainActivity.this, studentModel.toString(), Toast.LENGTH_SHORT).show();
                 }
                 catch (Exception e){
@@ -51,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 DBHelper dbHelper  = new DBHelper(MainActivity.this);
                 dbHelper.addStudent(studentModel);
+                editName.setText("");
+                editRollNumber.setText("");
+                switchIsActive.setChecked(false);
             }
         });
 
@@ -68,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
                         StudentModel student = list.get(i);
                         intent.putExtra("Name", student.getName());
                         intent.putExtra("RollNo", student.getRollNmber());
-                        intent.putExtra("IsEnroll", student.isEnroll());
+                        intent.putExtra("IsEnroll", Boolean.toString(student.isEnroll()));
+                        intent.putExtra("ID", Integer.toString(i));
                         MainActivity.this.startActivity(intent);
                     }
                 });
